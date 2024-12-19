@@ -203,4 +203,178 @@ def age():
     else:
         print("Invalid input!!")
 
-age()
+
+
+#12.Write a Python program to check if a given character is uppercase, lowercase, or a digit in python.
+
+
+def aldig():
+    a = input("Enter a character: ")
+    if a.isalpha():
+        if a.islower():
+            print("Your character is in lowercase")
+        else:
+            print("Your character is in uppercase")
+    else:
+        print("Enter an alphabate.")
+
+
+
+
+#13. Write a Python program that takes a color as input ("Red", "Yellow", "Green") and outputs the corresponding action ("Stop", "Get Ready", "Go").
+
+def traffic():
+    while True:
+        a = input("Enter a colour(Red, green or yellow):" )
+        if a.isalpha():
+            a = a.casefold()
+            if a == 'red':
+                print("Stop")
+            elif a == 'yellow':
+                print("Get ready")
+            elif a == 'green':
+                print('Go')
+            else:
+                print("Invalid character input!!")
+        else:
+            print("Invalid input")
+
+
+
+
+
+#14. Write a Python program to check eligibility for a job based on age and experience:
+# Age > 18 and Experience >= 2 years: Eligible
+# Otherwise: Not Eligible
+
+def job():
+    age = int(input("Enter your age: "))
+    exp = int(input("Enter your experience: "))
+    if age>18:
+        if exp>=2:
+            print("Eligible")
+        else:
+            print("Not eligible")
+    else:
+        print("Not eligible")
+
+#15. Write a Python program to give advice based on the temperature:
+# Temperature > 30°C: "It's hot, stay hydrated!"
+# Temperature between 15-30°C: "Enjoy the weather!"
+# Temperature < 15°C: "It's cold, wear warm clothes!"
+
+def temp():
+    a = float(input("Enter the temperature in °C: "))
+    if a>30:
+        print("It's hot, stay hydrated!")
+    elif 15<a<=30:
+        print("Enjoy the weather!")
+    elif a<15:
+        print("It's cold, wear warm clothes!")
+    else:
+        print("Invalid input!!")
+
+
+#16. Write a Python program that takes a menu option ("Pizza", "Burger", "Pasta") and prints its price:
+# Pizza: $10
+# Burger: $7
+# Pasta: $8
+
+def menu():
+    a = input("Pick one in between pizza, burger and pasta: ")
+    b = (a.upper())
+    if(b=="PIZZA"):
+        print("$10")
+    elif(b=="BURGER"):
+        print("$7")
+    elif(b=="PASTA"):
+        print("$8")
+
+
+#17. Write a Python program to select players based on height:
+# Height >= 6 feet: Selected
+# Height < 6 feet: Not Selected
+
+def height():
+    a = float(input("Enter your height in feet: "))
+    if(a>=6):
+        print("Selected.")
+    else:
+        print("Not Selected.")
+
+
+
+
+#18. Write a Python program to check if a person is eligible to watch a movie based on their age:
+# Age >= 18: Allowed
+# Age < 18: Not Allowed
+
+def anime():
+    a = int(input("Enter your age in digits: "))
+    if(a>=18):
+        print("You can watch the movie.")
+    elif(a<18):
+        print("You cannot watch the movie.")
+
+
+
+#19. Write a Python program to check login credentials:
+# Username: "admin", Password: "password123"
+# If correct, print "Access Granted"; otherwise, print "Access Denied."
+
+def login():
+    a = input("Enter yoru Username: ")
+    b = input("Enter your Password: ")
+    if(a=="admin" and b=="password123"):
+        print("Access Granted.")
+    else:
+        print("Access Denied.")
+
+#20. Write a Python program that takes a month number (1–12) and outputs the corresponding season:
+# 12, 1, 2: "Winter"
+# 3, 4, 5: "Spring"
+# 6, 7, 8: "Summer"
+# 9, 10, 11: "Autumn"
+
+def month():
+    a = int(input("Enter any number(1-12): "))
+    if(a==1 or a==2 or a==12):
+        print("Winter.")
+    elif(a==3 or a==4 or a==5):
+        print("Spring.")
+    elif(a==6 or a==7 or a==8):
+        print("Summer.")
+    elif(a==9 or a==10 or a==11):
+        print("Autum.")
+    else:
+        print("Invalid input!!")
+
+
+
+#21. Write a Python program to check car loan eligibility:
+# Salary >= 50,000 and Credit Score >= 700: "Eligible"
+# Otherwise: "Not Eligible"
+
+
+def loan():
+    a = int(input("Enter your salary amount in digits: "))
+    b = int(input("Enter your credit score in digits: "))
+    if(a>=50000 and b>=700):
+        print("Eligible.")
+    else:
+        print("Not Eligible.")
+
+
+
+
+
+
+#22. Write a program to check whether the given number is in between 1 and 100 or not.
+
+
+def between():
+    a = int(input("Enter any number: "))
+    if(a>=1 and a<=100):
+        print("The number lies in between one and one hundred.")
+    else:
+        print("The number does not lie in between one and one hundred.")
